@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  div.bid-card:nth-child(6) {
+		@apply bg-opacity-20;
+	}
+	div.bid-card:nth-child(5) {
+		@apply bg-opacity-20;
+	}
+	div.bid-card:nth-child(4) {
+		@apply bg-opacity-40;
+	}
+	div.bid-card:nth-child(3) {
+		@apply bg-opacity-60;
+	}
+	div.bid-card:nth-child(2) {
+		@apply bg-opacity-80;
+	}
+
+  .btn-primary {
+    @apply px-9 py-4 border-2 rounded-xl text-mkl-secondary border-mkl-secondary bg-mkl-primary transition-all duration-200;
+  }
+
+  .btn-secondary {
+    @apply px-9 py-4 border-2 rounded-xl text-mkl-primary border-mkl-primary bg-mkl-secondary transition-all duration-200;
+  }
+
+  .h1 {
+    @apply text-4xl font-bold;
+  }
+
+  .h2 {
+    @apply text-2xl font-bold;
+  }
+
+  .h3 {
+    @apply text-xl font-bold;
+  }
+}
+
+.home-background {
+  background: linear-gradient(
+      45deg,
+      rgba(32, 61, 89, 0.9) 0%,
+      rgba(32, 61, 89, 0.7) 100%
+    ),
+    url("/assets/bg-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+div.bid-card:nth-child(5) {
+}
